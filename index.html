@@ -59,6 +59,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .nav { display: flex; gap: 4px 20px; flex-wrap: wrap; }
 .nav a { color: var(--muted); text-decoration: none; font-size: 0.92rem; }
 .nav a:hover { color: var(--accent); }
+.nav a.nav-cv { color: var(--accent); font-weight: 500; }
+.cv-btn { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 8px; padding: 8px 16px; border: 1px solid var(--accent); border-radius: 4px; color: var(--accent); text-decoration: none; font-weight: 500; }
+.cv-btn:hover { background: var(--accent-soft); }
 
 main { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 48px 72px; }
 
@@ -140,6 +143,7 @@ footer { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 
       <a href="#teaching">Teaching</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
+      <a class="nav-cv" href="Odintsova_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
     </nav>
   </div>
 </header>
@@ -157,6 +161,8 @@ footer { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 
         <dd><div class="tags"><span class="tag">Labor Economics</span><span class="tag">International Trade</span><span class="tag">Firm Organization</span></div></dd>
         <dt>Email</dt>
         <dd><div class="email-row"><span class="email" id="email">ang.od@econ.au.dk</span><button class="copy" id="copy-email" type="button">Copy</button></div></dd>
+        <dt>CV</dt>
+        <dd><a href="Odintsova_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a> <span style="color:var(--muted)">· October 2026</span></dd>
         <dt>Profiles</dt>
         <dd><a href="https://pure.au.dk/portal/en/persons/ang.od%40econ.au.dk" target="_blank" rel="noopener">Aarhus University</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/angelina-odintsova-4a590771/" target="_blank" rel="noopener">LinkedIn</a></dd>
       </dl>
@@ -168,10 +174,10 @@ footer { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 
 
     <h3>Working papers</h3>
     <article class="paper">
-      <p class="p-title"><a href="https://www.ifo.de/DocDL/cesifo1_wp11525.pdf" target="_blank" rel="noopener">Shocks to Firm Organization: The Case of Foreign Acquisitions</a></p>
+      <p class="p-title"><a href="https://www.ifo.de/DocDL/cesifo1_wp11525.pdf" target="_blank" rel="noopener">Shocks to the Organization of the Firm: The Case of Foreign Takeovers</a></p>
       <p class="p-meta">with <a href="https://sites.google.com/view/kochmichael" target="_blank" rel="noopener">Michael Koch</a> and <a href="https://www.lucamacedoni.com/" target="_blank" rel="noopener">Luca Macedoni</a></p>
       <div class="p-links">
-        <a href="https://ideas.repec.org/p/ces/ceswps/_11525.html" target="_blank" rel="noopener">CESifo Working Paper No. 11525 (2024)</a>
+        <a href="https://ideas.repec.org/p/ces/ceswps/_11525.html" target="_blank" rel="noopener">CESifo Working Paper No. 11525</a>
         <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5054255" target="_blank" rel="noopener">SSRN</a>
       </div>
       <details>
@@ -179,15 +185,14 @@ footer { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 
         <p>This paper studies how foreign acquisitions affect firms' internal labor organization, particularly occupational switching. This focus is inspired by new stylized facts we document using linked employer-employee data from Denmark: while the total number of occupations and hierarchical layers in firms remains stable, a significant share of firms simultaneously add and drop occupations and layers each year. Applying a dynamic two-way fixed effects matching estimator, we find that foreign acquisitions lead to significant reorganization within firms: though the number of layers or occupations remains unchanged, firms exhibit substantial occupational churning among existing workers, especially among higher-paid employees.</p>
       </details>
     </article>
+    <article class="paper">
+      <p class="p-title">Unequal Pay for Equal Luck? Exchange Rate Shocks, Invoicing Currency, and the Pay of Managers and Workers</p>
+      <p class="p-meta">with <a href="https://sites.google.com/site/jackiemlchan/" target="_blank" rel="noopener">Jackie M. L. Chan</a> · draft coming soon</p>
+    </article>
 
     <h3>Work in progress</h3>
     <article class="paper">
       <p class="p-title">Occupational Restructuring in Targets and Acquirers: Evidence from Danish M&amp;As</p>
-      <p class="p-meta">single-authored</p>
-    </article>
-    <article class="paper">
-      <p class="p-title">Unequal Pay for Equal Luck: The Pay of Managers versus Workers</p>
-      <p class="p-meta">with <a href="https://sites.google.com/site/jackiemlchan/" target="_blank" rel="noopener">Jackie M. L. Chan</a></p>
     </article>
 
     <h3>Dissertation</h3>
@@ -201,18 +206,19 @@ footer { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 
     <h2>Teaching</h2>
     <p class="note">Teaching assistant at Aarhus University, Department of Economics and Business Economics.</p>
     <div class="rows">
-      <div class="row"><div class="when">2024–2025</div><div class="what"><strong>Macroeconomics</strong> <span>· Bachelor · TA and internal examiner, approx. 100 students</span></div></div>
-      <div class="row"><div class="when">Spring 2024</div><div class="what"><strong>Business Economics</strong> <span>· Bachelor · TA and internal examiner, approx. 75 students</span></div></div>
-      <div class="row"><div class="when">2023</div><div class="what"><strong>International Trade</strong> <span>· Bachelor</span></div></div>
+      <div class="row"><div class="when">Fall 2024–2025</div><div class="what"><strong>Macroeconomics</strong> <span>· Bachelor</span></div></div>
+      <div class="row"><div class="when">Spring 2024</div><div class="what"><strong>Business Economics</strong> <span>· Bachelor</span></div></div>
     </div>
   </section>
 
   <section id="cv">
     <h2>CV</h2>
+    <a class="cv-btn" href="Odintsova_CV.pdf" target="_blank" rel="noopener">Download full CV (PDF)</a>
 
     <h3>Positions</h3>
     <div class="rows">
-      <div class="row"><div class="when">2026–present</div><div class="what"><strong>Postdoctoral Researcher</strong> <span>· Aarhus University, Department of Economics and Business Economics</span></div></div>
+      <div class="row"><div class="when">2026–2027</div><div class="what"><strong>Postdoctoral Researcher</strong> <span>· Aarhus University, Department of Economics and Business Economics</span></div></div>
+      <div class="row"><div class="when">2023–present</div><div class="what"><strong>Member, CEFAU</strong> <span>(formerly FIND) · Aarhus University</span></div></div>
     </div>
 
     <h3>Education</h3>
@@ -225,15 +231,11 @@ footer { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 
 
     <h3>Presentations</h3>
     <div class="rows talks">
-      <div class="row"><div class="when">2025</div><div class="what">CESifo Summer Retreat, LMU Munich · 17th FIW Research Conference International Economics, WU Vienna · 26th Göttingen Workshop “International Economics” · Danish Graduate Programme in Economics (DGPE), Køge · Aarhus–Kiel Workshop, Sandbjerg · FIND Research Seminar and Internal Juniors’ Workshop, Aarhus University</div></div>
-      <div class="row"><div class="when">2024</div><div class="what">European Trade Study Group (ETSG), Athens · Norwegian School of Economics, Bergen · DGPE, Middelfart · Aarhus–Kiel Workshop, Sandbjerg · FIND Research Seminar and Internal Juniors’ Workshop, Aarhus University</div></div>
-      <div class="row"><div class="when">2023</div><div class="what">DGPE, Skælskør · FIND Research Seminar and Internal Juniors’ Workshop, Aarhus University</div></div>
-    </div>
-
-    <h3>Skills</h3>
-    <div class="rows">
-      <div class="row"><div class="when">Software</div><div class="what">Stata, SAS, Python, LaTeX</div></div>
-      <div class="row"><div class="when">Languages</div><div class="what">Russian (native), English (C1), Danish (C1), German (A2)</div></div>
+      <div class="row"><div class="when">Scheduled</div><div class="what">CEFAU Research Retreat (Aarhus University) · Economics Seminar (Aarhus University) · Aarhus–Kiel Workshop (Sandbjerg)</div></div>
+      <div class="row"><div class="when">2026</div><div class="what">Women in International Trade (WIT) European Conference (CEPR, Gerzensee) · European Trade Study Group (University of Exeter) · 10th International PhD Meeting in Economics (University of Macedonia, Thessaloniki) · Danish International Economics Workshop (Aarhus, poster)</div></div>
+      <div class="row"><div class="when">2025</div><div class="what">CESifo Summer Retreat (LMU Munich) · 17th FIW Research Conference International Economics (WU Vienna) · 26th Göttingen Workshop “International Economics” · Danish Graduate Programme in Economics (Køge) · Aarhus–Kiel Workshop (Sandbjerg) · FIND Research Seminar and Internal Juniors’ Workshop (Aarhus University)</div></div>
+      <div class="row"><div class="when">2024</div><div class="what">European Trade Study Group (Athens) · Norwegian School of Economics (Bergen) · Danish Graduate Programme in Economics (Middelfart) · Aarhus–Kiel Workshop (Sandbjerg) · FIND Research Seminar and Internal Juniors’ Workshop (Aarhus University)</div></div>
+      <div class="row"><div class="when">2023</div><div class="what">Danish Graduate Programme in Economics (Skælskør) · FIND Research Seminar and Internal Juniors’ Workshop (Aarhus University)</div></div>
     </div>
   </section>
 
@@ -245,8 +247,8 @@ footer { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 
         <p>Department of Economics and Business Economics<br>Aarhus University<br>Universitetsbyen 51, building 1814, room 251<br>8000 Aarhus C, Denmark</p>
       </div>
       <div>
-        <h3>Email &amp; phone</h3>
-        <p><span class="email">ang.od@econ.au.dk</span><br>+45 8715 2952</p>
+        <h3>Email</h3>
+        <p><span class="email">ang.od@econ.au.dk</span></p>
       </div>
     </div>
   </section>
